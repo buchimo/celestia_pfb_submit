@@ -32,9 +32,10 @@
             
             console.log(data)
             
-            // document.getElementById("tx_info").hidden = false
-            // document.getElementById("tx_info_tx_hash").innerHTML = "<a target='_blank' href='https://testnet.mintscan.io/celestia-incentivized-testnet/txs/" + data.txhash + "?height=" + data.height + "'>" + data.txhash + "</a>";
-            // document.getElementById("tx_info_height").innerHTML = data.height;
+            document.getElementById("tx_info").hidden = false
+            document.getElementById("tx_info_Namespace_ID").innerHTML = data.namespace_id
+            document.getElementById("tx_info_tx_hash").innerHTML = "<a target='_blank' href='https://testnet.mintscan.io/celestia-incentivized-testnet/txs/" + data.txhash + "?height=" + data.height + "'>" + data.txhash + "</a>";
+            document.getElementById("tx_info_height").innerHTML = data.height;
 
             return data;
         }).catch(err => {

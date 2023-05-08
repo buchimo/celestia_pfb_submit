@@ -24,7 +24,7 @@ def submit_pfb():
 
         tx_submit = requests.post(
             node_url + '/submit_pfb',
-            json={'namespace_id': namespace_id, 'data': data_hex, 'gas_limit': 80000, "fee": 2000}
+            json={'namespace_id': namespace_id, 'data': data_hex, 'gas_limit': 80000, 'fee': 2000}
         )
         tx_submit_data = tx_submit.json()
 
