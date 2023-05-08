@@ -18,7 +18,16 @@
     <div>
       <label for="data" style="color:rgb(27, 194, 110)">Please make sure your celestia node is available</label>
     </div>
-
+    <div style="margin-top: 30px;">
+      <div>
+        <label for="message">message :</label>
+        <input type="textarea" id="message" name="message" style="min-height: 100px;min-width: 300px;"
+          placeholder="Please type your message" required />
+      </div>
+    </div>
+    <div>
+      <button type="submit" id="submit">submit</button>
+    </div>
   </form>
   <div id="tx_result" class="result"></div>
 
